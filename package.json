@@ -1,0 +1,21 @@
+{
+  "name": "discourse-plugin",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run src/server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^24.7.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@near-js/crypto": "^2.3.3",
+    "every-plugin": "^0.2.1",
+    "near-sign-verify": "^0.4.3"
+  }
+}
