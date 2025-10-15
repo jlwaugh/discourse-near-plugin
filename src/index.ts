@@ -431,7 +431,7 @@ export default createPlugin({
 
           // Use the shell script instead of Node.js
           const { stdout, stderr } = await execAsync(
-            `./src/decrypt.sh "${tempKeyPath}" "${input.payload}"`
+            `chmod +x ./src/decrypt.sh && ./src/decrypt.sh "${tempKeyPath}" "${input.payload}"`
           );
 
           // Clean up temp file
